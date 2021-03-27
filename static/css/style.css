@@ -1,0 +1,100 @@
+body {
+    font-family: 'Century Gothic';
+    background-color: steelblue;
+}
+
+h1 {
+    color: black;
+}
+
+.center{
+    position: fixed;
+    top: 50%;
+    left: 40%;
+}
+
+.flash {
+    position: absolute;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding-top: 10px;
+    border: solid 5px white;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    float: right;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 10%
+}
+
+a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.box{
+	width: 600px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	background: none;
+	text-align: center;
+	border-radius: 30px;
+	font-family: Montserrat;
+}
+
+.box h1{
+	font-family: Montserrat;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.box input {
+    border: 0;
+	background: rgb(255, 255, 255, 0.7);
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 10px 10px;
+	width: 200px;
+	outline: none;
+	color: black;
+	transition: 0.25s;
+}
+
+.box input[type = "submit"]{
+	background: none;
+	display: block;
+	font-size: 15px;
+	font-family: Montserrat;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #e5e6eb;;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+	background: #61616d;
+}

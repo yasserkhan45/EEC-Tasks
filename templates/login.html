@@ -4,7 +4,7 @@
     <div>
         {% for message in get_flashed_messages() %}
             <div class = "flash" id="msg">
-                <a href="#" onclick="closeFlash()"><b>&times;</b></a>
+                <a href="#" id = "close" onclick="closeFlash()"><b>&times;</b></a>
                 {{ message }}
             </div>
         {% endfor %}

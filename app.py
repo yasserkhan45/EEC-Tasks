@@ -79,7 +79,6 @@ def login():
             flash('Please check your login details and try again.')
             return redirect(url_for('login'))
         else:
-            flash('Login Successful')
             return render_template('profile.html', name = user.name)
         session['email'] = form.email.data
         session['password'] = form.password.data
