@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{%block title %} Login! {% endblock %}
+{% block content %}
+    <div>
+        {% for message in get_flashed_messages() %}
+            <div class = "flash" id="msg">
+                <a href="#" onclick="closeFlash()"><b>&times;</b></a>
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+    <div class = "btns">
+            <a href = "{{ url_for('signup') }}">Sign Up</a>
+            <a href = "{{ url_for('login') }}">Login</a>
+    </div>
+    <br><br><br>
+    <form method = "POST" action = "" class = "box">
+        <h1> Login! </h1>
+        {{ form.hidden_tag() }}
+        {{ form.email.label }}:<br> {{ form.email() }}
+        {{ form.password.label }}:<br> {{ form.password() }}
+        {{ form.submit()}}
+    </form>
+{% endblock %}

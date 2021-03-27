@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} Welcome {% endblock %}
+{% block content %}
+    <div class = "btns">
+            <a href = "{{ url_for('signup') }}">Sign Up</a>
+            <a href = "{{ url_for('login') }}">Login</a>
+    </div>
+    <h1>Welcome, User</h1>
+{% endblock %}
